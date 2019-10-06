@@ -11,7 +11,7 @@ import UIKit
 
 class CategoryViewController: UIViewController {
     
-    
+    var delegate: MenuToggleDelegate?
     
     @IBOutlet weak var tableCategory: UITableView!
     
@@ -45,11 +45,13 @@ class CategoryViewController: UIViewController {
     func createButtonItem(){
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(menuOpenClose))
+        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "      ", style: .plain, target: self, action: nil)
+       
     }
     
     @objc private func menuOpenClose() {
-        print("123")
+        delegate?.toggleMenu()
     }
     
     
@@ -95,7 +97,8 @@ class CategoryViewController: UIViewController {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "CaruselController", sender: self)
+        performSegue(withIdentifier: "Carousel", sender: self)
+        self.remove()
     }
     
  }

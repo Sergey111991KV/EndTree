@@ -7,9 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
-protocol MenuToggle {
+protocol MenuToggleDelegate {
     func toggleMenu()
+
 }
 
-extension U
+//
+//enum ControllerEnum {
+//    case <#case#>
+//}
