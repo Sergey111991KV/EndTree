@@ -14,7 +14,18 @@
                     <view key="view" contentMode="scaleToFill" id="fSb-Ej-BTP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="лог1 " translatesAutoresizingMaskIntoConstraints="NO" id="oZc-Hs-aZh">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oZc-Hs-aZh" firstAttribute="leading" secondItem="3UI-fY-9Zq" secondAttribute="leading" constant="20" id="4FQ-H7-WxQ"/>
+                            <constraint firstItem="3UI-fY-9Zq" firstAttribute="trailing" secondItem="oZc-Hs-aZh" secondAttribute="trailing" constant="20" id="Gwv-JP-Vl5"/>
+                            <constraint firstItem="3UI-fY-9Zq" firstAttribute="bottom" secondItem="oZc-Hs-aZh" secondAttribute="bottom" constant="20" id="PX6-Xk-BJy"/>
+                            <constraint firstItem="oZc-Hs-aZh" firstAttribute="top" secondItem="3UI-fY-9Zq" secondAttribute="top" constant="20" id="mfn-oG-bG1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3UI-fY-9Zq"/>
                     </view>
                 </viewController>
@@ -23,4 +34,7 @@
             <point key="canvasLocation" x="184" y="106"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="лог1 " width="367" height="103"/>
+    </resources>
 </document>

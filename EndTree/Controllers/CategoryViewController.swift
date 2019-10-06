@@ -98,7 +98,7 @@ class CategoryViewController: UIViewController {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "Carousel", sender: self)
-        self.remove()
+       
     }
     
  }

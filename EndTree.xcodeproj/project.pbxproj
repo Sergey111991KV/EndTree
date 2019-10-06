@@ -90,8 +90,7 @@
 				1CC73FFA2347CE7100D7BDD5 /* AppDelegate.swift */,
 				1CC73FFC2347CE7100D7BDD5 /* SceneDelegate.swift */,
 				1CBFB610234816FB00F775E6 /* Models */,
-				1CC740002347CE7100D7BDD5 /* Main.storyboard */,
-				1CBFB6132349ADFE00F775E6 /* Profile.storyboard */,
+				1CE371722349E718006790A9 /* Storyboard */,
 				1CC740032347CE7300D7BDD5 /* Assets.xcassets */,
 				1CC740052347CE7300D7BDD5 /* LaunchScreen.storyboard */,
 				1CC740082347CE7300D7BDD5 /* Info.plist */,
@@ -118,6 +117,15 @@
 				1CC334722347FDCB004B2FBD /* ProtocolForMenu.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1CE371722349E718006790A9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1CC740002347CE7100D7BDD5 /* Main.storyboard */,
+				1CBFB6132349ADFE00F775E6 /* Profile.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		1CEF6CA92347EE8E00FC6D93 /* Cell */ = {

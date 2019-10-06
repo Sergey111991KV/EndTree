@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 class CaruselViewController: UIViewController {
 
      var isMove = false
@@ -20,7 +17,7 @@ class CaruselViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(menuOpenClose))
-        self.view.backgroundColor = UIColor.yellow
+        
     }
     
     @objc private func menuOpenClose() {
@@ -30,12 +27,9 @@ class CaruselViewController: UIViewController {
         print("carousel")
     }
 
-    @IBAction func newTap(_ sender: Any) {
-        
-    }
+   
     
-    
-     func showMenuViewController(shouldMove: Bool) {
+         func showMenuViewController(shouldMove: Bool) {
            if shouldMove {
                // показываем menu
                UIView.animate(withDuration: 0.5,
